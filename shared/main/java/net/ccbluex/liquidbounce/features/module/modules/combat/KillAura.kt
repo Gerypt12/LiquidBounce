@@ -687,8 +687,7 @@ class KillAura : Module() {
      * Check if run should be cancelled
      */
     private val cancelRun: Boolean
-        inline get() = mc.thePlayer!!.spectator || !isAlive(mc.thePlayer!!)
-                || LiquidBounce.moduleManager[Blink::class.java].state || LiquidBounce.moduleManager[FreeCam::class.java].state
+        inline get() = mc.thePlayer!!.spectator || !isAlive(mc.thePlayer!!
 
     /**
      * Check if [entity] is alive
